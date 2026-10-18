@@ -7,3 +7,5 @@ A Claude Code skill for glyph/ASCII scenes and pixel mascots (wearables, creatur
 - To move it to another machine: clone this repo into `~/.claude/skills/`.
 
 Tools need Python 3 with Pillow and numpy. Start at SKILL.md.
+
+The bundled JetBrains Mono font is under the SIL Open Font License (tools/JetBrainsMono-OFL.txt).
