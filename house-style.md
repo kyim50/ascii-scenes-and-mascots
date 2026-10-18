@@ -17,7 +17,12 @@ These are standing preferences. Apply them unless the person asks otherwise in t
   dark `#6A4019`, ink `#251810`. A new creature gets its own muted palette (mascots.md § Palettes).
 
 ## Time of day
-- Scenes are set at night or dusk only, never day. Dusk warms the sky; the colour layer keeps its hues.
+- Scenes are set at night or dusk by default. Dusk warms the sky; the colour layer keeps its hues.
+- **Exception: an app with light screens.** When the app's direction has a light theme (a morning
+  log, a daytime mode), its scenes may be set at dawn or in soft daylight to match, so they belong
+  on the light page instead of sitting there as dark cards. Keep the same rules: glyph structure,
+  form from light (the sun as a pixel disc with light rings, never a yellow blob), a value plan,
+  no gold (sunlight is a pale warm ink, not saturated yellow), and dim, simple backdrops.
 
 ## Glyph-only grounds (hearth/Rami and similar ink styles)
 - Backgrounds are drawn only with glyphs: ground, walls, furniture, trees. Form comes from density,

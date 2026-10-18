@@ -61,6 +61,18 @@ Density falls off with distance from the viewer and from light. Never tile one g
 - **Empty space is a tool.** Clear wide bands (the sky, a clearing, a path) so masses read as shapes.
 Check at phone size: if you can't name the three planes in a thumbnail, raise the midground and thin the far layer.
 
+**Scenes inside app UI (a hero card, a header strip, a timer screen)** sit next to crisp text and
+controls, on tinted grounds rather than near-black, so they need more punch than a full-screen room:
+- Raise the whole ladder: focal subject at full strength, midground 0.30–0.45, far 0.14–0.22.
+  On a coloured ground (indigo, plum, teal), use a light ink tinted from that ground and check
+  the midground against it, not against black.
+- One clear focal point per card (the moon, the mascot, the lamp), larger than you'd draw it in
+  a room, with its light rings. A small card holds one or two planes, not three.
+- Crop tight: a card shows a slice of the world (a window, a hilltop, a burrow mouth), not a
+  miniature panorama.
+- Test it next to the screen's text at 1×: if the scene reads as grey noise or a blur beside the
+  type, it's too faint or too busy. Raise the values or remove glyphs.
+
 ## Repeated masses (forests, crowds of rocks, rooftops)
 - Don't run every tree through full lit-volume shading with outlines: a hundred outlined volumes
   become a wall of `|/\=` noise. Use volumes for the 1–3 hero shapes nearest the viewer.

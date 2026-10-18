@@ -9,6 +9,18 @@
 
   So `q = clamp(0.8·CW, 24/H, 5·RH/H)` for a sprite `H` pixels tall. If rule 1 and rule 2 can't
   both hold, rule 1 wins. Tabi: CW 5.07, q 3.5–4.6 with depth.
+- **Two sizes: in-scene and hero.** The rules above are for a character *inside a scene*, where
+  it shares the frame with glyph structure. When the mascot is *the subject of the screen* (a
+  home hero card, an empty state, onboarding, a celebration, a streak moment), draw it at **hero
+  size**: the same sprite and palette at a larger `q`, so it stands 64–120 pt tall and is clearly
+  the brightest, most saturated thing on screen. The scene around a hero mascot is a backdrop: a
+  close crop (its patch of ground, a few stars, a light ring), never a wide landscape that shrinks
+  it. Give it a pose and expression that tell the screen's state (sleepy, proud, waiting), and
+  keep the 12-pt clear zone around nearby text. Test: at phone size, would someone point at the
+  mascot first? On a hero screen they should.
+- **Detail scales with size.** At hero size a 22 × 14 sprite reads as chunky; add a hero variant
+  with more pixels (a finer face, paws, a lit edge, the wearable's folds) drawn from the same
+  palette and anchors, rather than just scaling the small one up.
 - Snap each pixel rect to device pixels (`round(x*scale)/scale`, both edges), or seams appear.
 - **Rows of palette keys**, with `.` for empty. Keys index a palette, so a recolour is a palette swap.
   Example keys: `O` body, `L` lit body, `T/t` pack, `d` dark outline/hand, `k` ink (eyes, ties).

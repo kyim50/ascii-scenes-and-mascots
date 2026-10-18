@@ -39,7 +39,10 @@ does is data placed against those anchors. Built this way the art is detailed, c
 - **A value plan:** a bright focal subject, a legible midground, a sparse far layer and open space
   (scenes.md § Value plan). Dim means quiet, not murky.
 - **Mascots sit in the scene:** square pixels, at least ~24 pt and at most ~5 glyph rows tall
-  (mascots.md § The sprite).
+  inside a scene; at **hero size** (64–120 pt, a detailed variant) when the mascot is the
+  subject of the screen (mascots.md § The sprite).
+- **Scenes inside app UI get more punch:** higher values, one large focal point, a tight crop,
+  checked beside the screen's text (scenes.md § Value plan).
 - **Verified:** rendered from the op list, compared in a montage, viewed on the device or a
   full-phone mockup, and pinned by tests (verify.md).
 
@@ -60,7 +63,8 @@ does is data placed against those anchors. Built this way the art is detailed, c
 | Rectangle shadow under a sprite | Two stacked low-alpha ellipse-ish rects (wide 0.28, narrow 0.18) |
 | `vYvYvY` / `====` rows reading as text | Mix 2–3 glyphs per density step by seeded hash; drop density with distance |
 | Flat, unlit hero shapes (the nearest tree, the rock, the boss) | Lit volumes (volume.py) or a lit-edge pass: dense on the light side, sparse in shadow |
-| Mascot drawn huge, or too tiny to read | `q = clamp(0.8·CW, 24/H, 5·RH/H)` (mascots.md) |
+| Mascot drawn huge in a scene, or too tiny to read | In a scene: `q = clamp(0.8·CW, 24/H, 5·RH/H)`. As a screen's subject: hero size, 64–120 pt, detailed variant (mascots.md) |
+| Scene in a UI card reads as grey noise beside the text | Raise the value ladder, one large focal point, crop tight (scenes.md § Value plan) |
 | Whole scene murky, every plane the same value | Value plan: focal brightest, midground 0.18–0.30, far 0.08–0.14 and sparser |
 | Forest of outlined volumes reads as `\|/=` noise | Volumes for 1–3 hero shapes only; silhouette band behind, outline the mass not each tree |
 | Moon or orb is a clump of `*#o` | Pixel disc in the colour layer + glyph light rings (scenes.md § Small round lights) |
